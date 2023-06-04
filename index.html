@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feliz Cumple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        img {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        iframe {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <!-- Start of first page -->
+        <div data-role="page" id="foo" class="ui-page ui-page-footer-fixed ui-page-active ui-page-theme-b">
+
+            <div data-role="header">
+                <h1>Feliz Cumpleaños</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+                <p>¡Feliz Cumple a Dallana!</p>
+                <p><a href="#bar" class="ui-btn ui-shadow ui-corner-all">Toca aquí para ver la carta</a></p>
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/012/264/245/non_2x/feliz-cumpleanos-happy-birthday-in-spanish-illustration-vector.jpg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UBX8RjL_c3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+
+        <!-- Start of second page -->
+        <div data-role="page" id="bar">
+
+            <div data-role="header">
+                <h1>Carta</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+                <p>Soy más de páginas web que de papel, por eso estas leyendo esto. Bueno feliz cumple hermanita, espero que sigas creciendo
+                    pero no más que yo eh. No es mucho pero es trabajo honesto. Te quiere tu hermano.  </p>
+                <p><a href="#foo" class="ui-btn ui-shadow ui-corner-all">Volver</a></p>
+                <p><a href="#popup" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Toca aquí ;D</a></p>
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+        <div data-role="page" id="popup">
+
+            <div data-role="header" data-theme="b">
+                <h1>Dialog</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+                <h2>Popup</h2>
+                <img
+                    src="https://images3.memedroid.com/images/UPLOADED593/6074aee9efd5c.jpeg">
+                <p><a href="#foo" data-rel="back"
+                        class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Volver</a></p>
+            </div><!-- /content -->
+        </div><!-- /page popup -->
+    </body>
+</body>
+
+</html>
